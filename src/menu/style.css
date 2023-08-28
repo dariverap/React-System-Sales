@@ -1,0 +1,102 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #1976D2;
+    --hover-color: #303F9F;
+    --text-color: #FFF;
+}
+
+
+.sidebar header .image,
+.sidebar .icon{
+    min-width: 40px;
+}
+
+
+.sidebar header{
+    position: relative;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .logo-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar header .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    min-width: 200px;
+    background: var(--sidebar-color);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SidebarList{
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .SiderbarList .row{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.SidebarList .listItem{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    padding: 10px;
+}
+
+.SidebarList .row:hover{
+    background: var(--hover-color);
+    border-left: 3px solid var(--text-color);
+    cursor: pointer;
+}
+
+.SidebarList #active{
+    background: var(--hover-color);
+    border-left: 3px solid var(--text-color);
+}
+
+.listItem .icon{
+    font-size: 30px;
+}
+
